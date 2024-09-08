@@ -1,0 +1,26 @@
+basePath: /api/
+host: 127.0.0.1:8080
+info:
+  contact: {}
+  description: This is a backend API for Image Service
+  title: Image Upload API
+  version: "1.0"
+paths:
+  /images/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: Delete an image file by id
+      parameters:
+      - description: id of the image to delete
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses: {}
+      summary: Delete an image
+      tags:
+      - images
+swagger: "2.0"
